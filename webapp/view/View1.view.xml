@@ -1,0 +1,51 @@
+<mvc:View
+    controllerName="StandradUI5Application.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+	 <App id="app">
+    <VBox>
+        <Toolbar>
+            <SearchField id="searchField" placeholder="Search" search=".onSearch" />
+            <ToolbarSpacer />
+            <Button text="Go" type="Emphasized" press=".onSearch" />
+             <Input placeholder="Supplier" />
+            <Input placeholder="Category" />
+            <Button text="Go" type="Emphasized" />
+            <Button text="Adapt Filters" />
+        </Toolbar>
+
+        <Table id="productsTable">
+        
+            <headerToolbar>
+                <Toolbar>
+                    <Title text="Products" level="H2" />
+                </Toolbar>
+            </headerToolbar>
+
+            <columns>
+                <Column>
+                    <Text text="shift" />
+                </Column>
+                <Column>
+                    <Text text="Date" />
+                </Column>
+                <Column>
+                    <Text text="statues" />
+                </Column>
+             
+            </columns>
+
+            <items>
+                <ColumnListItem     type = "Navigation" press="onPress">
+                    <cells>
+                        <Text text="{detailModel>ZX2GluFru}" />
+                        <Text text="{detailModel>ZX4GluFru}" />
+                        <Text text="{detailModel>ZX5GluFru}" />
+                       
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </VBox>
+    </App>
+</mvc:View>

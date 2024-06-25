@@ -1,0 +1,119 @@
+/* Enter your custom styles here */
+/* Enter your custom styles here */
+#__table0  {
+
+    height: 500px !important; /* Set the desired height */
+}
+.moveRight {
+    margin-left: 20px; /* Adjust the margin as needed */
+}
+.moveright2{
+	margin-left:410px;
+}
+.moveright3{
+	margin-left:325px;
+}
+.column-container {
+    width: 120px; /* Adjust width as needed */
+}
+
+.column-container HBox {
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+.small-text-area {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+/* Add margin-bottom to the first line */
+.first-line {
+    margin-bottom: 50px; /* Adjust the value as needed */
+}
+	
+.second-line {
+   
+     margin-bottom: 50px;
+}
+ .new-line1 {
+ 	margin-right: 60px;
+ }
+ .new-line {
+ 	margin-right:200px;
+ }
+    
+
+.third-line {
+	margin-bottom: 50px;
+}
+.margin-right-10 {
+    margin-right: 260px;
+}
+.margin-right-11 {
+    margin-right: 270px;
+}
+
+.left-align {
+    margin-left: 27px; 
+   
+}
+.left-align4 {
+    margin-right: 250px; 
+   
+}
+.left-align5 {
+    margin-left: 40px; 
+   
+}
+.left-align6 {
+    margin-left: 25px; 
+   
+}
+.left-align7 {
+    margin-left: 59px;
+   
+}
+.left-align8 {
+    margin-right: 60px; /* Adjust this value as needed */
+   
+}
+.left-align9 {
+    margin-left: 22px; /* Adjust this value as needed */
+   
+}
+.left-align10 {
+    margin-left: 37px; /* Adjust this value as needed */
+   
+}
+.left-align11 {
+    margin-right: 100px; /* Adjust this value as needed */
+   
+}
+
+
+.left-align1 {
+    margin-right: 35px; /* Adjust this value as needed */
+}
+.left-align2 {
+    margin-left: 75px; /* Adjust this value as needed */
+}/* Enter your custom styles here */
+.moven {
+	margin-right: 800px;
+}
+.left-align23 {
+	margin-right: 1000px;
+
+}
+.left-align24 {
+	margin-right: 1000px;
+	
+
+}
+.fullWidthPage {
+    margin: 0 ;
+    padding: 0 ;
+    width: 100% ;
+}
+
+.fullWidthVBox {
+    width: 100% ;
+    box-sizing: border-box;
+}
