@@ -64,10 +64,52 @@ sap.ui.define([
                 MessageToast.show("Please enter a search query.");
             }
         },
+         onGoPress: function () {
+            var oModel = this.getView().getModel();
+            var sPath = "/GSHeaderSet";
+            this.byId("productsTable").unbindItems();
+
+            oModel.read(sPath, {
+                success: function (oData) {
+                    console.log("Data fetched successfully:", oData);
+
+                    var oJSONModel = new JSONModel({ results: oData.results });
+                    this.getView().setModel(oJSONModel, "detailModel");
+
+                    this.byId("productsTable").bindItems({
+                        path: "detailModel>/results",
+                        template: new sap.m.ColumnListItem({
+                            cells: [
+                                new sap.m.Text({ text: "{detailModel>ZrefNumber}" }),
+                                new sap.m.Text({ text: "{detailModel>Tc38aKtext}" }),
+                                new sap.m.Text({ text: "{detailModel>ZdateGluFru}" }),
+                                new sap.m.Text({ text: "{detailModel>ZStatusGluFru}" })
+                            ],
+                            type: "Navigation",
+                            press: this.onPress.bind(this)
+                        })
+                    });
+                }.bind(this),
+                error: function (oError) {
+                    console.error("Error occurred: ", oError);
+                    MessageToast.show("Failed to fetch data.");
+                }
+            });
+        },
+      
+         
         onPress: function (oEvent) {
-    this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-    this.oRouter.navTo("view2");
+    var sQuery = this.byId("searchField").getValue();
+    if (sQuery) {
+        this.oRouter.navTo("view2", {
+            query: sQuery
+        });
+    } else {
+        MessageToast.show("Please enter a search query.");
+    }
 }
+
+
 
       
     });

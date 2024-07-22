@@ -5,13 +5,11 @@
 	 <App id="app">
     <VBox>
         <Toolbar>
-            <SearchField id="searchField" placeholder="Search" search=".onSearch" />
+            <SearchField id="searchField" placeholder="Search" search=".onSearch"  width="auto" />
             <ToolbarSpacer />
-            <Button text="Go" type="Emphasized" press=".onSearch" />
-             <Input placeholder="Supplier" />
-            <Input placeholder="Category" />
-            <Button text="Go" type="Emphasized" />
-            <Button text="Adapt Filters" />
+           
+            <Button text="Go" type="Emphasized"   press=".onGoPress" />
+       
         </Toolbar>
 
         <Table id="productsTable">
@@ -23,6 +21,10 @@
             </headerToolbar>
 
             <columns>
+            	  <Column>
+                    <Text text="refrencenumber" />
+                </Column>
+            	
                 <Column>
                     <Text text="shift" />
                 </Column>
@@ -38,9 +40,10 @@
             <items>
                 <ColumnListItem     type = "Navigation" press="onPress">
                     <cells>
-                        <Text text="{detailModel>ZX2GluFru}" />
-                        <Text text="{detailModel>ZX4GluFru}" />
-                        <Text text="{detailModel>ZX5GluFru}" />
+                    	  <Text text="{detailModel>ZrefNumber}" />
+                        <Text text="{detailModel>Tc38aKtext}" />
+                        <Text text="{detailModel>ZdateGluFru}" />
+                        <Text text="{detailModel>ZStatusGluFru}" />
                        
                     </cells>
                 </ColumnListItem>

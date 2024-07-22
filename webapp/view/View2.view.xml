@@ -1,272 +1,315 @@
-<mvc:View controllerName="StandradUI5Application.controller.View2" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns="sap.m"  >
+
+<mvc:View controllerName="StandradUI5Application.controller.View2" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns="sap.m"
+	xmlns:uxap="sap.uxap" xmlns:core="sap.ui.core" displayBlock="true">
 	<Page title="Detail View">
 		<content>
-			<VBox>
-			
-					<ToolbarSpacer/>
-				<FlexBox justifyContent="SpaceAround" wrap="Wrap" class="moven">
-                  
-                    <Button text="Create" id="createButton" press="onCreate" />
-                    <Button text="Change" id="changeButton" press="onChange" />
-                    <Button text="Display" id="displayButton" press="onDisplay" />
-                    <Button text="Confirm" id="confirmButton" press="onConfirm" />
-                    
-						<FlexBox alignItems="Center" direction="Row" justifyContent="Center">
-							<Label class="margin_right" labelFor="refNo" text="Reference Number"/>
-							<Input id="refNo" width="100%"/>
-							<layoutData>
-								<l:GridData span="L6 M6 S12"/>
-							</layoutData>
-						</FlexBox>
-			
-					<items/>
-					</FlexBox>
-				<IconTabBar>
-					<items>
-						<IconTabFilter text="product Information">
-							<VBox>
-								<HBox>
-									<VBox class="sapUiSmallMarginEnd">
-										<FlexBox class="container" wrap="Wrap">
-											<l:Grid>
-												<l:content>
-													<FlexBox alignItems="Center" direction="Row" class="left-align">
-														<Label class="margin_right1" labelFor="awl1" text="المبيعات (X2) "/>
-														<Input id="awl1" value="{GSHeaderSet>/ZX2GluFru}" change="onAwl1Change"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-													<FlexBox alignItems="Center" direction="Row" class="left-align8">
-														<Label class="margin_right" labelFor="akher1" text="إرتجاعات المبيعات (X4) "/>
-														<Input id="akher1" value="{GSHeaderSet>/ZX4GluFru}"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-													<FlexBox alignItems="Center" direction="Row" class="left-align6">
-														<Label class="margin_right" labelFor="y1" text=" إرتجاعات الإنتاج (X5) "/>
-														<Input id="y1"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-													<FlexBox alignItems="Center" direction="Row" class="left-align10">
-														<Label class="margin_right" labelFor="awl2" text="قياس تانك 1"/>
-														<Input id="awl2" value="{path: '/ZX2GluFru'}"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-													<FlexBox alignItems="Center" direction="Row" class="left-align7">
-														<Label class="margin_right" labelFor="akher2" text="قياس تانك 2"/>
-														<Input id="akher2" value="{path: '/ZX4GluFru'}"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-													<FlexBox alignItems="Center" direction="Row" class="left-align2">
-														<Label class="margin_right" labelFor="y2" text=" قياس تانك 3"/>
-														<Input id="y2"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-													<FlexBox alignItems="Center" direction="Row" class="left-align10">
-														<Label class="margin_right" labelFor="br" text="قياس تانك 4"/>
-														<Input id="br"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-													<FlexBox alignItems="Center" direction="Row" class="left-align7">
-														<Label class="margin_right" labelFor="br" text="قياس تانك 5"/>
-														<Input id="bm"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-													<FlexBox alignItems="Center" direction="Row" class="left-align2">
-														<Label class="margin_right" labelFor="br" text="قياس تانك 6"/>
-														<Input id="bg"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-													<FlexBox alignItems="Center" direction="Row" class="left-align10">
-														<Label class="margin_right" labelFor="br" text="قياس تانك 7"/>
-														<Input id="bk"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-													<FlexBox alignItems="Center" direction="Row" class="left-align7">
-														<Label class="margin_right" labelFor="br" text="قياس تانك 8"/>
-														<Input id="bv"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-													<FlexBox alignItems="Center" direction="Row" class="left-align5">
-														<Label class="margin_right" labelFor="br" text="قياس تانك 1 فركتوز"/>
-														<Input id="br1"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-													<FlexBox alignItems="Center" direction="Row" class="left-align11">
-														<Label class="margin_right" labelFor="br" text="قياس تانك 1 فركتوز"/>
-														<Input id="br2"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-													<FlexBox alignItems="Center" direction="Row" class="left-align9">
-														<Label class="margin_right" labelFor="br" text="قياس تانك 2 فركتوز"/>
-														<Input id="bl"/>
-														<layoutData>
-															<l:GridData span="L4 M4 S12"/>
-														</layoutData>
-													</FlexBox>
-												</l:content>
+		
+				<HBox>
+					<Button id="change" visible="true" class="editIcon onEdit" icon="sap-icon://edit" tooltip="Edit" press=".onChange"/>
+					<Button id="create" visible="true" class="editIcon onEdit" icon="sap-icon://create-form" tooltip="Create" press=".onCreate"/>
+					<Button id="save" text="Save" press=".onSave"/>
+				</HBox>
+				<uxap:ObjectPageLayout  id="objectpagelayout"   class="objectPageLayoutCustom">
+					<uxap:sections>
+						<uxap:ObjectPageSection id="section1" title="General Information">
+							<uxap:subSections>
+								<uxap:ObjectPageSubSection>
+									<uxap:blocks>
+										<l:Grid position="Center">
+											<l:content>
+										<VBox class="section-spacing">
+											<HBox>
+												<Label text="Reference Number:" class="sapUiTinyMarginEnd"/>
+												<Text id="refrencenumber" text="{detailModel>/ZrefNumber}"/>
+											</HBox>
+											<HBox>
+												<Label text="Shift:" class="sapUiTinyMarginEnd"/>
+												<Text id="shift" text="{detailModel>/Tc38aKtext}"/>
+											</HBox>
+											<HBox>
+												<Label text="Date:" class="sapUiTinyMarginEnd"/>
+												<Text id="date" text="{detailModel>/ZdateGluFru}"/>
+											</HBox>
+											<HBox>
+												<Label text="Status:" class="sapUiTinyMarginEnd"/>
+												<Text id="status" text="{detailModel>/ZStatusGluFru}"/>
+											</HBox>
+										</VBox>
+											</l:content>
 											</l:Grid>
-										</FlexBox>
-									</VBox>
-								</HBox>
-							</VBox>
-						</IconTabFilter>
-						<IconTabFilter text="orders">
-							<VBox>
-								<Table class="table" id="__table0" width="40%">
-									<columns>
-										<Column id="mo" hAlign="Center">
-											<Text class="title" text="المنتج" id="KP"/>
-										</Column>
-										<Column id="ms" hAlign="Center">
-											<Text class="title" text=" الكمية" id="PP"/>
-										</Column>
-										<Column id="mf" hAlign="Center">
-											<Text class="title" text="رقم الاوردر" id="OP"/>
-										</Column>
-									</columns>
-									<items>
-										<ColumnListItem vAlign="Middle">
-											<cells>
-												<Input id="sss11"/>
-												<Input/>
-												<Input/>
-											</cells>
-										</ColumnListItem>
-										<ColumnListItem vAlign="Middle">
-											<cells>
-												<Input id="ss11"/>
-												<Input/>
-												<Input/>
-											</cells>
-										</ColumnListItem>
-										<ColumnListItem vAlign="Middle">
-											<cells>
-												<Input id="ss111"/>
-												<Input/>
-												<Input/>
-											</cells>
-										</ColumnListItem>
-										<ColumnListItem vAlign="Middle">
-											<cells>
-												<Input id="s"/>
-												<Input/>
-												<Input/>
-											</cells>
-										</ColumnListItem>
-										<ColumnListItem vAlign="Middle">
-											<cells>
-												<Input id="s1"/>
-												<Input/>
-												<Input/>
-											</cells>
-										</ColumnListItem>
-										<ColumnListItem vAlign="Middle">
-											<cells>
-												<Input id="ss1"/>
-												<Input/>
-												<Input/>
-											</cells>
-										</ColumnListItem>
-										<ColumnListItem vAlign="Middle">
-											<cells>
-												<Input id="sd"/>
-												<Input/>
-												<Input/>
-											</cells>
-										</ColumnListItem>
-									</items>
-								</Table>
-							</VBox>
-						</IconTabFilter>
-						<IconTabFilter text="total">
-							<VBox>
-								<FlexBox alignItems="Center" direction="Column" class="left-align23">
-									<Label class="margin_right1" labelFor="awl1" text="اجمالي رصيد اول (30 تانك)"/>
-									<Input id="awl" change="onAwl1Change"/>
-									<layoutData>
-										<l:GridData span="L4 M4 S12"/>
-									</layoutData>
-								</FlexBox>
-								<FlexBox alignItems="Center" direction="Column" class="left-align24">
-									<Label class="margin_right1" labelFor="awl1" text="اجمالي رصيد اخر (30 تانك))"/>
-									<Input id="aw" change="onAwl1Change"/>
-									<layoutData>
-										<l:GridData span="L4 M4 S12"/>
-									</layoutData>
-								</FlexBox>
-							</VBox>
-						</IconTabFilter>
-						<IconTabFilter text="output">
-							<VBox>
-								<Table id="resultTable" width="100%" items="{ResultsModel>/results}">
-									<columns>
-										<Column hAlign="Center">
-											<Label text="إجمالى الكميات"/>
-										</Column>
-										<Column hAlign="Center">
-											<Label text="إنتاج جلوكوز تانك لكل نوع جلوكوز"/>
-										</Column>
-										<Column hAlign="Center">
-											<Label text="الاجمالى"/>
-										</Column>
-										<Column hAlign="Center">
-											<Label text="إنتاج جلوكوز تحت التصنيع"/>
-										</Column>
-										<Column hAlign="Center">
-											<Label text="فرق اول عن اخر (Y)"/>
-										</Column>
-										<Column hAlign="Center">
-											<Label text="Changed by"/>
-										</Column>
-										<Column hAlign="Center">
-											<Label text="Changed on"/>
-										</Column>
-									</columns>
-									<items>
-										<ColumnListItem>
-											<cells>
-												<Text text="{ResultsModel>ZTankTotalGluFru}"/>
-												<Text text="{ResultsModel>ZProd1GluFru}"/>
-												<Text text="{ResultsModel>ZTank2RrGluFru}"/>
-												<Text text="{ResultsModel>ZProd2GluFru}"/>
-												<Text text="{ResultsModel>ZTank30TotalRrGluFru}"/>
-												<Text text="{ResultsModel>ZStatusGluFruBy}"/>
-												<Text text="{ResultsModel>ZStatusGlu0fruOn}"/>
-											</cells>
-										</ColumnListItem>
-									</items>
-								</Table>
-							</VBox>
-						</IconTabFilter>
-					</items>
-				</IconTabBar>
-				<HBox class="sapUiSmallMarginTop"></HBox>
-			</VBox>
+									</uxap:blocks>
+								</uxap:ObjectPageSubSection>
+							</uxap:subSections>
+						</uxap:ObjectPageSection>
+						
+						<uxap:ObjectPageSection id="section2" title="Productinformation">
+							<uxap:subSections>
+								<uxap:ObjectPageSubSection>
+									<uxap:blocks>
+									
+										<VBox>
+											<HBox>
+												<VBox class="sapUiSmallMarginEnd">
+													<FlexBox class="container" wrap="Wrap">
+														<l:Grid>
+															<l:content>
+																<FlexBox alignItems="Center" direction="Row" class="left-align">
+																	<Label class="margin_right1" labelFor="awl1" text="المبيعات (X2) "/>
+																	<Input id="awl1" value="{GSHeaderSet>/ZX2GluFru}" editable="{editModel>/isEditable}"/>
+																	<layoutData>
+																		<l:GridData span="L4 M4 S12"/>
+																	</layoutData>
+																</FlexBox>
+																<FlexBox alignItems="Center" direction="Row" class="left-align8">
+																	<Label class="margin_right" labelFor="akher1" text="إرتجاعات المبيعات (X4) "/>
+																	<Input id="akher1" value="{GSHeaderSet>/ZX4GluFru}" editable="{editModel>/isEditable}"/>
+																	<layoutData>
+																		<l:GridData span="L4 M4 S12"/>
+																	</layoutData>
+																</FlexBox>
+																<FlexBox alignItems="Center" direction="Row" class="left-align6">
+																	<Label class="margin_right" labelFor="y1" text=" إرتجاعات الإنتاج (X5) "/>
+																	<Input id="y1" editable="{editModel>/isEditable}"/>
+																	<layoutData>
+																		<l:GridData span="L4 M4 S12"/>
+																	</layoutData>
+																</FlexBox>
+																<FlexBox alignItems="Center" direction="Row" class="left-align10">
+																	<Label class="margin_right" labelFor="awl2" text="قياس تانك 1"/>
+																	<Input id="awl2" editable="{editModel>/isEditable}"/>
+																	<layoutData>
+																		<l:GridData span="L4 M4 S12"/>
+																	</layoutData>
+																</FlexBox>
+																<FlexBox alignItems="Center" direction="Row" class="left-align7">
+																	<Label class="margin_right" labelFor="akher2" text="قياس تانك 2"/>
+																	<Input id="akher2" editable="{editModel>/isEditable}"/>
+																	<layoutData>
+																		<l:GridData span="L4 M4 S12"/>
+																	</layoutData>
+																</FlexBox>
+																<FlexBox alignItems="Center" direction="Row" class="left-align2">
+																	<Label class="margin_right" labelFor="y2" text=" قياس تانك 3"/>
+																	<Input id="y2" editable="{editModel>/isEditable}"/>
+																	<layoutData>
+																		<l:GridData span="L4 M4 S12"/>
+																	</layoutData>
+																</FlexBox>
+																<FlexBox alignItems="Center" direction="Row" class="left-align10">
+																	<Label class="margin_right" labelFor="br" text="قياس تانك 4"/>
+																	<Input id="br" editable="{editModel>/isEditable}"/>
+																	<layoutData>
+																		<l:GridData span="L4 M4 S12"/>
+																	</layoutData>
+																</FlexBox>
+																<FlexBox alignItems="Center" direction="Row" class="left-align7">
+																	<Label class="margin_right" labelFor="br" text="قياس تانك 5"/>
+																	<Input id="bm" editable="{editModel>/isEditable}"/>
+																	<layoutData>
+																		<l:GridData span="L4 M4 S12"/>
+																	</layoutData>
+																</FlexBox>
+																<FlexBox alignItems="Center" direction="Row" class="left-align2">
+																	<Label class="margin_right" labelFor="br" text="قياس تانك 6"/>
+																	<Input id="bg" editable="{editModel>/isEditable}"/>
+																	<layoutData>
+																		<l:GridData span="L4 M4 S12"/>
+																	</layoutData>
+																</FlexBox>
+																<FlexBox alignItems="Center" direction="Row" class="left-align10">
+																	<Label class="margin_right" labelFor="br" text="قياس تانك 7"/>
+																	<Input id="bk" editable="{editModel>/isEditable}"/>
+																	<layoutData>
+																		<l:GridData span="L4 M4 S12"/>
+																	</layoutData>
+																</FlexBox>
+																<FlexBox alignItems="Center" direction="Row" class="left-align7">
+																	<Label class="margin_right" labelFor="br" text="قياس تانك 8"/>
+																	<Input id="bv" editable="{editModel>/isEditable}"/>
+																	<layoutData>
+																		<l:GridData span="L4 M4 S12"/>
+																	</layoutData>
+																</FlexBox>
+																<FlexBox alignItems="Center" direction="Row" class="left-align5">
+																	<Label class="margin_right" labelFor="br" text="قياس تانك 1 فركتوز"/>
+																	<Input id="br1" editable="{editModel>/isEditable}"/>
+																	<layoutData>
+																		<l:GridData span="L4 M4 S12"/>
+																	</layoutData>
+																</FlexBox>
+																<FlexBox alignItems="Center" direction="Row" class="left-align9">
+																	<Label class="margin_right" labelFor="br" text="قياس تانك 2 فركتوز"/>
+																	<Input id="bl" editable="{editModel>/isEditable}"/>
+																	<layoutData>
+																		<l:GridData span="L4 M4 S12"/>
+																	</layoutData>
+																</FlexBox>
+															</l:content>
+														</l:Grid>
+													</FlexBox>
+												</VBox>
+											</HBox>
+										</VBox>
+											
+										
+									</uxap:blocks>
+								</uxap:ObjectPageSubSection>
+							</uxap:subSections>
+						</uxap:ObjectPageSection>
+					
+				
+						<uxap:ObjectPageSection id="section3" title="Orders">
+							<uxap:subSections>
+								<uxap:ObjectPageSubSection>
+									<uxap:blocks>
+										<VBox>
+											<Table class="table" id="__table0" width="40%">
+												<columns>
+													<Column id="mo" hAlign="Center">
+														<Text class="title" text="المنتج" id="KP"/>
+													</Column>
+													<Column id="ms" hAlign="Center">
+														<Text class="title" text=" الكمية" id="PP"/>
+													</Column>
+													<Column id="mf" hAlign="Center">
+														<Text class="title" text="رقم الاوردر" id="OP"/>
+													</Column>
+												</columns>
+												<items>
+													<ColumnListItem vAlign="Middle">
+														<cells>
+															<Input id="sss11" editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+														</cells>
+													</ColumnListItem>
+													<ColumnListItem vAlign="Middle">
+														<cells>
+															<Input id="ss11" editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+														</cells>
+													</ColumnListItem>
+													<ColumnListItem vAlign="Middle">
+														<cells>
+															<Input id="ss111" editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+														</cells>
+													</ColumnListItem>
+													<ColumnListItem vAlign="Middle">
+														<cells>
+															<Input id="s" editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+														</cells>
+													</ColumnListItem>
+													<ColumnListItem vAlign="Middle">
+														<cells>
+															<Input id="s1" editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+														</cells>
+													</ColumnListItem>
+													<ColumnListItem vAlign="Middle">
+														<cells>
+															<Input id="ss1" editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+														</cells>
+													</ColumnListItem>
+													<ColumnListItem vAlign="Middle">
+														<cells>
+															<Input id="sd" editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+															<Input editable="{editModel>/isEditable}"/>
+														</cells>
+													</ColumnListItem>
+												</items>
+											</Table>
+										</VBox>
+									</uxap:blocks>
+								</uxap:ObjectPageSubSection>
+							</uxap:subSections>
+						</uxap:ObjectPageSection>
+						<uxap:ObjectPageSection id="section4" title="Total">
+							<uxap:subSections>
+								<uxap:ObjectPageSubSection>
+									<uxap:blocks>
+										<VBox>
+											<HBox class="total-section">
+												<VBox class="total-item">
+													<Label class="margin_right1" labelFor="awl" text="اجمالي رصيد اول (30 تانك)"/>
+													<Input id="awl" width="200px" change="onAwl1Change" editable="{editModel>/isEditable}"/>
+												</VBox>
+												<VBox class="total-item">
+													<Label class="margin_right1" labelFor="aw" text="اجمالي رصيد اخر (30 تانك)"/>
+													<Input id="aw" width="200px" change="onAwl1Change" editable="{editModel>/isEditable}"/>
+												</VBox>
+											</HBox>
+										</VBox>
+									</uxap:blocks>
+								</uxap:ObjectPageSubSection>
+							</uxap:subSections>
+						</uxap:ObjectPageSection>
+							<uxap:ObjectPageSection id="section5" title="Outputs">
+								<uxap:subSections>
+									<uxap:ObjectPageSubSection>
+										<uxap:blocks>
+										<VBox>
+											<Table id="resultTable" width="100%" items="{ResultsModel>/results}">
+												<columns>
+													<Column hAlign="Center">
+														<Label text="إجمالى الكميات"/>
+													</Column>
+													<Column hAlign="Center">
+														<Label text="إنتاج جلوكوز تانك لكل نوع جلوكوز"/>
+													</Column>
+													<Column hAlign="Center">
+														<Label text="الاجمالى"/>
+													</Column>
+													<Column hAlign="Center">
+														<Label text="إنتاج جلوكوز تحت التصنيع"/>
+													</Column>
+													<Column hAlign="Center">
+														<Label text="فرق اول عن اخر (Y)"/>
+													</Column>
+													<Column hAlign="Center">
+														<Label text="Changed by"/>
+													</Column>
+													<Column hAlign="Center">
+														<Label text="Changed on"/>
+													</Column>
+												</columns>
+												<items>
+													<ColumnListItem>
+														<cells>
+															<Text text="{ResultsModel>ZTankTotalGluFru}"/>
+															<Text text="{ResultsModel>ZProd1GluFru}"/>
+															<Text text="{ResultsModel>ZTank2RrGluFru}"/>
+															<Text text="{ResultsModel>ZProd2GluFru}"/>
+															<Text text="{ResultsModel>ZTank30TotalRrGluFru}"/>
+															<Text text="{ResultsModel>ZStatusGluFruBy}"/>
+															<Text text="{ResultsModel>ZStatusGlu0fruOn}"/>
+														</cells>
+													</ColumnListItem>
+													
+												</items>
+											</Table>
+										</VBox>
+												<Button id="okButton" text="OK" press=".onOk" visible="{editModel>/isEditable}" class="section-spacing1"/>
+								</uxap:blocks>
+									</uxap:ObjectPageSubSection>
+								</uxap:subSections>
+							</uxap:ObjectPageSection>
+						</uxap:sections>
+					</uxap:ObjectPageLayout>
+			
+		
 		</content>
 	</Page>
 </mvc:View>
+
+
+
+

@@ -100,7 +100,7 @@
                     "target": "main"
                 },
                 {
-                    "pattern": "view2",
+                    "pattern": "view2/{query}",
                     "name": "view2",
                     "target": "view2"
                 }
@@ -113,14 +113,9 @@
                 "view2": {
                     "viewName": "View2",
                     "viewLevel": 2
-                },
-                "notFound": {
-                    "viewName": "NotFound",
-                    "viewLevel": 0
                 }
+              
             }
         }
     }
 }
-		
-	

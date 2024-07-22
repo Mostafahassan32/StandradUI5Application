@@ -1,11 +1,11 @@
-/* Enter your custom styles here */
-/* Enter your custom styles here */
+Enter your custom styles here 
+ Enter your custom styles here 
 #__table0  {
 
-    height: 500px !important; /* Set the desired height */
+    height: 500px;  
 }
 .moveRight {
-    margin-left: 20px; /* Adjust the margin as needed */
+    margin-left: 20px; 
 }
 .moveright2{
 	margin-left:410px;
@@ -14,19 +14,18 @@
 	margin-left:325px;
 }
 .column-container {
-    width: 120px; /* Adjust width as needed */
+    width: 120px;  
 }
-
 .column-container HBox {
-    margin-bottom: 10px; /* Adjust margin as needed */
+    margin-bottom: 10px;  
 }
 .small-text-area {
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
+    margin: 0; 
+    padding: 0; 
 }
-/* Add margin-bottom to the first line */
+ Add margin-bottom to the first line 
 .first-line {
-    margin-bottom: 50px; /* Adjust the value as needed */
+    margin-bottom: 50px; 
 }
 	
 .second-line {
@@ -39,9 +38,8 @@
  .new-line {
  	margin-right:200px;
  }
-    
-
-.third-line {
+ 
+ .third-line {
 	margin-bottom: 50px;
 }
 .margin-right-10 {
@@ -72,29 +70,29 @@
    
 }
 .left-align8 {
-    margin-right: 60px; /* Adjust this value as needed */
+    margin-right: 60px; 
    
 }
 .left-align9 {
-    margin-left: 22px; /* Adjust this value as needed */
+    margin-left: 22px; 
    
 }
 .left-align10 {
-    margin-left: 37px; /* Adjust this value as needed */
+    margin-left: 37px; 
    
 }
 .left-align11 {
-    margin-right: 100px; /* Adjust this value as needed */
+    margin-right: 100px; 
    
 }
 
 
 .left-align1 {
-    margin-right: 35px; /* Adjust this value as needed */
+    margin-right: 35px; 
 }
 .left-align2 {
-    margin-left: 75px; /* Adjust this value as needed */
-}/* Enter your custom styles here */
+    margin-left: 75px; 
+}
 .moven {
 	margin-right: 800px;
 }
@@ -116,4 +114,32 @@
 .fullWidthVBox {
     width: 100% ;
     box-sizing: border-box;
+}
+.bold-underline {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.total-section {
+    width: 100%;
+    display: flex;
+     margin-left: 100px; 
+    justify-content: space-between; 
+}
+
+.total-item {
+    flex: 1; 
+    margin-right: 100px; 
+}
+
+.section-spacing {
+    margin-bottom: 1rem;
+}
+ .section-spacing1 {
+ 	margin-left: 1350px;
+ 
+ }
+ .objectPageLayoutCustom {
+    height: auto ;
+        overflow: hidden;
 }
